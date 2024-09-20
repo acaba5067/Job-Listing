@@ -36,7 +36,7 @@ const Searchbar = (props) => {
     console.log(jobSearch)
 
     return (
-        <Wrapper p={2} mt={-5} mb={2}>
+        <Wrapper p={2} mt={-5} mb={2} xs={12}>
             <Select onChange={handleChange} name='type' value={jobSearch.type} disableUnderline variant='filled' defaultValue={'Full time'}>
                 <MenuItem value={'Full time'}>Full time</MenuItem>
                 <MenuItem value={'Part time'}>Part time</MenuItem>
