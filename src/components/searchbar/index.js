@@ -36,17 +36,17 @@ const Searchbar = (props) => {
     console.log(jobSearch)
 
     return (
-        <Wrapper p={2} mt={-5} mb={2} xl={12} md={6} sm={4}  xs={4}>
-            <Select onChange={handleChange} name='type' value={jobSearch.type} disableUnderline variant='filled' defaultValue={'Full time'}>
+        <Wrapper p={2} mt={-5} mb={2}>
+            <Select onChange={handleChange} name='type' value={jobSearch.type} disableUnderline variant='filled' defaultValue={'Full time'} xs={4}>
                 <MenuItem value={'Full time'}>Full time</MenuItem>
                 <MenuItem value={'Part time'}>Part time</MenuItem>
                 <MenuItem value={'Contract'}>Contract</MenuItem>
             </Select>
-            <Select onChange={handleChange} name='location' value={jobSearch.location} disableUnderline variant='filled' defaultValue={'Remote'}>
+            <Select onChange={handleChange} name='location' value={jobSearch.location} disableUnderline variant='filled' defaultValue={'Remote'} xs={4}>
                 <MenuItem value={'Remote'}>Remote</MenuItem>
                 <MenuItem value={'In Office'}>In Office</MenuItem>
             </Select>
-            <Button onClick={search} color='primary' variant='contained' disableElevation>Search</Button>
+            <Button onClick={search} color='primary' variant='contained' disableElevation xs={4}>Search</Button>
         </Wrapper>
     )
 }
